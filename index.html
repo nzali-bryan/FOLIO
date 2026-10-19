@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bryan Nzali</title>
+    <meta name="description" content="Portfolio de Bryan Nzali, étudiant en licence génie logiciel à Douala. Applications web en PHP et Symfony.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg barre-navigation" aria-label="Navigation principale">
+            <div class="d-flex flex-wrap align-items-center justify-content-between w-100">
+                <a class="marque" href="#accueil">BRYAN NZALI</a>
+
+                <button class="bouton-menu d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavigation" aria-controls="menuNavigation" aria-expanded="false" aria-label="Ouvrir le menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+
+                <div class="collapse navbar-collapse justify-content-lg-end menu-navigation" id="menuNavigation">
+                    <a class="lien-navigation" href="#projets">Projets</a>
+                    <a class="lien-navigation" href="#competences">Compétences</a>
+                    <a class="lien-navigation" href="#parcours">Parcours</a>
+                    <a class="lien-navigation" href="#faq">FAQ</a>
+                    <a class="bouton bouton-principal ms-lg-2 mt-2 mt-lg-0" href="#contact">Me contacter</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== ACCUEIL ===== -->
+        <section class="section-accueil" id="accueil">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h1 class="accueil-titre">
+                            Salut, je suis Bryan, je construis des <em>applications web.</em>
+                        </h1>
+                        <p class="accueil-texte">
+                            Étudiant en licence génie logiciel à l'IUT. Je transforme des besoins réels en applications Symfony, des site e-commerce aux plateformes qui repondent à des besoins spécifiques.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a class="bouton bouton-principal" href="#contact">Discutons</a>
+                            <a class="bouton bouton-secondaire" href="#projets">Voir mes projets</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="accueil-visuel">
+                            <div class="cadre-photo">
+                                <img src="img.jpg" alt="Portrait de Bryan Nzali" width="640" height="800">
+                            </div>
+                            <div class="badge-chiffre badge-bas">
+                                <strong>3 projets</strong>
+                                <span>web concrets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TECHNOLOGIES ===== -->
+        <section class="bande-technologies" aria-label="Technologies">
+            <div class="container">
+                <p class="legende">Technologies que j'utilise</p>
+                <ul class="liste-technologies">
+                    <li>Symfony</li>
+                    <li>PHP</li>
+                    <li>Bootstrap</li>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== PROJETS ===== -->
+        <section class="section-page" id="projets">
+            <div class="container">
+                <h2 class="titre-section">Projets récents</h2>
+                <p class="sous-titre-section">Des applications concrètes, pensées pour de vrais utilisateurs.</p>
+
+                <div class="row g-4">
+
+                    <!-- Projet 1 : BusTrack -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="carte-projet">
+                            <div class="apercu-projet">
+                                <!-- Pour mettre une capture : remplace le bloc .fenetre-factice par
+                     <img src="images/bustrack.png" alt="Capture de BusTrack"> -->
+                                <div class="fenetre-factice">
+                                    <div class="points"><i></i><i></i><i></i></div>
+                                    <div class="nom">BusTrack</div>
+                                    <div class="ligne"></div>
+                                    <div class="ligne"></div>
+                                </div>
+                            </div>
+                            <div class="corps-projet">
+                                <span class="etiquette-projet">Application web</span>
+                                <h3 class="titre-projet">BusTrack, suivi de bus en temps réel</h3>
+                                <p class="texte-projet">Application permettant aux passagers de suivre leur bus en temps réel. Réalisée pour l'entreprise SOCATUR.</p>
+                                <ul class="technos-projet">
+                                    <li>Symfony</li>
+                                    <li>Twig</li>
+                                    <li>Doctrine</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <div class="liens-projet">
+                                    <!-- ▼ METS TON LIEN ICI ▼ -->
+                                    <a class="bouton bouton-principal" href="#" target="_blank" rel="noopener">Voir le projet</a>
+                                    <a class="bouton bouton-secondaire" href="#" target="_blank" rel="noopener">Code source</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Projet 2 : e-commerce -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="carte-projet">
+                            <div class="apercu-projet">
+                                <div class="fenetre-factice">
+                                    <div class="points"><i></i><i></i><i></i></div>
+                                    <div class="nom">Boutique de sport</div>
+                                    <div class="ligne"></div>
+                                    <div class="ligne"></div>
+                                </div>
+                            </div>
+                            <div class="corps-projet">
+                                <span class="etiquette-projet">Site e-commerce</span>
+                                <h3 class="titre-projet">Vente d'équipements sportifs</h3>
+                                <p class="texte-projet">Site de vente en ligne, déjà accessible sur internet : pages produits, panier et formulaire de contact.</p>
+                                <ul class="technos-projet">
+                                    <li>PHP</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <div class="liens-projet">
+                                    <!-- ▼ METS TON LIEN ICI ▼ -->
+                                    <a class="bouton bouton-principal" href="#" target="_blank" rel="noopener">Voir le site</a>
+                                    <a class="bouton bouton-secondaire" href="#" target="_blank" rel="noopener">Code source</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Projet 3 : salle de jeu -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="carte-projet">
+                            <div class="apercu-projet">
+                                <img src="images/parcheming.png" alt="Capture de parchemins">
+                            </div>
+                            <div class="corps-projet">
+                                <span class="etiquette-projet">Génération de parchemins en ligne</span>
+                                <h3 class="titre-projet">site de Génération de parchemins </h3>
+                                <p class="texte-projet">un site web qui permet de créer des parchemins pour la paroisse saint PIE X de pk14.</p>
+                                <ul class="technos-projet">
+                                    <li>PHP</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <div class="liens-projet">
+                                    <!-- ▼ METS TON LIEN ICI ▼ -->
+                                    <a class="bouton bouton-principal" href="https://certification.free.nf/" target="_blank" rel="noopener">Voir le site</a>
+                                    <a class="bouton bouton-secondaire" href="https://certification.free.nf/" target="_blank" rel="noopener">Code source</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COMPÉTENCES ===== -->
+        <section class="section-page section-alt" id="competences">
+            <div class="container">
+                <h2 class="titre-section">Compétences</h2>
+                <p class="sous-titre-section">Du site vitrine à l'application de gestion, je développe des produits web solides et lisibles.</p>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="carte-verre">
+                            <div class="icone-competence" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </div>
+                            <h3>Développement web</h3>
+                            <p>Sites dynamiques et responsives en PHP, HTML, CSS et Bootstrap, avec une solide pratique de Symfony et Twig.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="carte-verre">
+                            <div class="icone-competence" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                            </div>
+                            <h3>Applications de gestion</h3>
+                            <p>Conception d'applications autour d'une base de données avec Doctrine : suivi, réservations, catalogues.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="carte-verre">
+                            <div class="icone-competence" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                            </div>
+                            <h3>Algorithmique et maintenance</h3>
+                            <p>Bases solides en Python, C et Java, et maintenance logicielle : diagnostic, installation et mise à jour.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bande-chiffres">
+                    <div class="chiffre-cle"><strong>4 mois</strong><span>de stage chez INOV Cameroun</span></div>
+                    <div class="chiffre-cle"><strong>3</strong><span>projets web concrets</span></div>
+                    <div class="chiffre-cle"><strong>50+</strong><span>programmes et exercices</span></div>
+                    <div class="chiffre-cle"><strong>10</strong><span>technologies pratiquées</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PARCOURS ===== -->
+        <section class="section-page" id="parcours">
+            <div class="container">
+                <h2 class="titre-section">Parcours</h2>
+                <p class="sous-titre-section">Formation et expérience, dans l'ordre.</p>
+
+                <div class="frise">
+                    <div class="etape-frise">
+                        <span class="periode">2024</span>
+                        <h3>Baccalauréat scientifique (série D)</h3>
+                        <p>Obtenu avec la mention Assez Bien. Le point de départ de mes études en informatique.</p>
+                    </div>
+                    <div class="etape-frise">
+                        <span class="periode">IUT</span>
+                        <h3>DUT Génie informatique</h3>
+                        <p>Premiers projets en HTML, CSS et PHP, et bases en programmation avec Python, C et Java.</p>
+                    </div>
+                    <div class="etape-frise">
+                        <span class="periode">Stage de 4 mois</span>
+                        <h3>INOV Cameroun</h3>
+                        <p>Apprentissage de Symfony en conditions réelles, avec Twig et Doctrine.</p>
+                    </div>
+                    <div class="etape-frise">
+                        <span class="periode">En cours</span>
+                        <h3>Licence, option génie logiciel</h3>
+                        <p>Poursuite de mes études à l'IUT, avec des projets Symfony en parallèle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROCESSUS ===== -->
+        <section class="section-page section-alt" id="processus">
+            <div class="container">
+                <h2 class="titre-section">Ma façon de travailler</h2>
+                <p class="sous-titre-section">Trois étapes pour passer d'une idée à une application qui fonctionne.</p>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="carte-verre carte-processus">
+                            <span class="numero-processus" aria-hidden="true">01</span>
+                            <h3>Comprendre le besoin</h3>
+                            <p>Je clarifie les objectifs et les utilisateurs avant d'écrire la première ligne de code.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="carte-verre carte-processus">
+                            <span class="numero-processus" aria-hidden="true">02</span>
+                            <h3>Développer par étapes</h3>
+                            <p>J'écris un code structuré avec Symfony, Twig et Doctrine, fonctionnalité après fonctionnalité.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="carte-verre carte-processus">
+                            <span class="numero-processus" aria-hidden="true">03</span>
+                            <h3>Tester et corriger</h3>
+                            <p>Je traque chaque bug jusqu'à sa cause : c'est la partie du métier que je préfère.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bandeau-appel">
+                    <p>Un projet web en tête ? Parlons-en.</p>
+                    <a class="bouton bouton-principal" href="#contact">Me contacter</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== À PROPOS ===== -->
+        <section class="section-page" id="apropos">
+            <div class="container">
+                <h2 class="titre-section">À propos</h2>
+                <div class="apropos-texte mt-4">
+                    <p>Je suis passionné par la programmation en général. Ce qui me motive : l'envie de résoudre un code qui bug, de comprendre pourquoi, puis de le faire fonctionner.</p>
+                    <p>Je suis curieux et motivé, et je cherche à progresser en travaillant sur des projets concrets.</p>
+                    <ul class="liste-interets">
+                        <li>Lecture</li>
+                        <li>Recherche technologique</li>
+                        <li>Jeux vidéo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section class="section-page section-alt" id="faq">
+            <div class="container">
+                <h2 class="titre-section">Questions fréquentes</h2>
+                <p class="sous-titre-section">Quelques réponses sur mon travail et mes compétences.</p>
+
+                <div class="accordion faq-accordeon" id="accordeonFaq">
+
+                    <div class="accordion-item element-faq">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button question-faq" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                Sur quels types de projets travailles-tu ?
+              </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordeonFaq">
+                            <div class="accordion-body reponse-faq">Surtout des applications web en PHP et Symfony : site e-commerce, suivi de bus en temps réel, gestion de salle de jeu.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item element-faq">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button question-faq collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                Quelles technologies maîtrises-tu ?
+              </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
+                            <div class="accordion-body reponse-faq">PHP, Symfony (Twig, Doctrine), HTML, CSS et Bootstrap. J'ai aussi de bonnes bases en Python, C et Java.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item element-faq">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button question-faq collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                As-tu déjà travaillé en entreprise ?
+              </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
+                            <div class="accordion-body reponse-faq">Oui, j'ai effectué un stage de 4 mois chez INOV Cameroun, où j'ai appris Symfony.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item element-faq">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button question-faq collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                Comment peut-on te contacter ?
+              </button>
+                        </h3>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordeonFaq">
+                            <div class="accordion-body reponse-faq">Par e-mail à bryannzali@gmail.com ou par téléphone au +237 655 473 150. Je suis basé à Douala.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="section-page section-contact" id="contact">
+            <div class="container">
+                <h2 class="titre-section">Travaillons ensemble</h2>
+                <p class="sous-titre-section">Un stage, un projet, une question : écris-moi, je réponds rapidement.</p>
+
+                <ul class="liste-contact">
+                    <li><a href="mailto:bryannzali@gmail.com">bryannzali@gmail.com</a></li>
+                    <li><a href="tel:+237655473150">+237 655 473 150</a></li>
+                    <li>Douala, Cameroun</li>
+                </ul>
+
+                <!-- ▼ METS TES LIENS ICI ▼ -->
+                <div class="reseaux">
+                    <a href="https://github.com/nzali-bryan/" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+
+                <a class="bouton bouton-principal" href="mailto:bryannzali@gmail.com">Envoyer un e-mail</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pied-page">
+        <div class="container">
+            <p class="mb-0">© 2026 Bryan Nzali. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
